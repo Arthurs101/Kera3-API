@@ -1,0 +1,62 @@
+[debug] [2023-05-10T16:50:43.964Z] ----------------------------------------------------------------------
+[debug] [2023-05-10T16:50:43.968Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\inmar\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-05-10T16:50:43.969Z] CLI Version:   11.25.3
+[debug] [2023-05-10T16:50:43.969Z] Platform:      win32
+[debug] [2023-05-10T16:50:43.969Z] Node Version:  v19.6.0
+[debug] [2023-05-10T16:50:43.969Z] Time:          Wed May 10 2023 10:50:43 GMT-0600 (hora estándar central)
+[debug] [2023-05-10T16:50:43.970Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-10T16:50:43.980Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-10T16:50:43.981Z] > authorizing via signed-in user (arturoargueta4@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Universidad\2023\CYCLE1\ING-SOFTWARE\Kera3-API
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-05-10T16:50:52.601Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-05-10T16:50:53.384Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-05-10T16:50:53.385Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project firstapi-cf05c (FIRSTAPI) 
+[info] 
+=== Functions Setup
+[debug] [2023-05-10T16:50:54.770Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-10T16:50:54.771Z] > authorizing via signed-in user (arturoargueta4@gmail.com)
+[debug] [2023-05-10T16:50:54.771Z] [iam] checking project firstapi-cf05c for permissions ["firebase.projects.get"]
+[debug] [2023-05-10T16:50:54.771Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/firstapi-cf05c:testIamPermissions [none]
+[debug] [2023-05-10T16:50:54.771Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/firstapi-cf05c:testIamPermissions x-goog-quota-user=projects/firstapi-cf05c
+[debug] [2023-05-10T16:50:54.772Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/firstapi-cf05c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-10T16:50:55.181Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/firstapi-cf05c:testIamPermissions 200
+[debug] [2023-05-10T16:50:55.181Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/firstapi-cf05c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-10T16:50:55.182Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/firstapi-cf05c/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-05-10T16:50:55.182Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/firstapi-cf05c/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/firstapi-cf05c
+[debug] [2023-05-10T16:50:55.183Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/firstapi-cf05c/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-05-10T16:50:55.183Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/firstapi-cf05c/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/firstapi-cf05c
+[debug] [2023-05-10T16:50:55.821Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/firstapi-cf05c/services/runtimeconfig.googleapis.com 200
+[debug] [2023-05-10T16:50:55.821Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/firstapi-cf05c/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-05-10T16:50:55.870Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/firstapi-cf05c/services/cloudfunctions.googleapis.com 200
+[debug] [2023-05-10T16:50:55.870Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/firstapi-cf05c/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
